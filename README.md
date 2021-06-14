@@ -1,6 +1,8 @@
 # stylelint-semantic-groups
 
-Opinionated group based SCSS property ordering.
+Opinionated group based SCSS property ordering for better maintability and perception.
+
+📖 Theory behind: [Harry Potter and the Order of CSS](https://dev.to/thekashey/happy-potter-and-the-order-of-css-5ec)
 
 ---
 

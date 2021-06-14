@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "main": "dist/es5/index.js",
   "types": "dist/es5/index.d.ts",
+  "module": "dist/es2015/index.js",
+  "module:es2019": "dist/es2019/index.js",
   "keywords": [
     "stylelint",
     "stylelint-config",
@@ -39,8 +41,6 @@
     "stylelint-order": "^4.1.0",
     "typescript": "^4.3.2"
   },
-  "module": "dist/es2015/index.js",
-  "module:es2019": "dist/es2019/index.js",
   "engines": {
     "node": ">=10"
   },
