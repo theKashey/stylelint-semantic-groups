@@ -1,0 +1,21 @@
+export default [
+  [
+    'background',
+    'background-color',
+    'background-image',
+    'background-repeat',
+    'background-position',
+    'background-position-x',
+    'background-position-y',
+    'background-size',
+    'background-clip',
+    'background-origin',
+    'background-attachment',
+    'background-blend-mode',
+  ],
+  ['list-style', 'list-style-position', 'list-style-type', 'list-style-image'],
+  ['table-layout', 'empty-cells', 'caption-side'],
+  ['outline', 'outline-width', 'outline-style', 'outline-color', 'outline-offset'],
+  ['box-shadow', 'box-decoration-break'],
+  ['visibility', 'cursor', 'isolation', 'backdrop-filter', 'mix-blend-mode'],
+];
