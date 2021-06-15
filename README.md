@@ -1,6 +1,6 @@
 # stylelint-semantic-groups
 
-Opinionated group based SCSS property ordering for better maintability and perception.
+Opinionated group based SCSS property ordering for better `maintainability` and `perception`.
 
 📖 Theory behind: [Harry Potter and the Order of CSS](https://dev.to/thekashey/happy-potter-and-the-order-of-css-5ec)
 
@@ -10,20 +10,28 @@ Opinionated group based SCSS property ordering for better maintability and perce
 
 - install required packages
 
-```js
+```bash
 yarn add stylelint-order stylelint-semantic-groups
 ```
 
 - set configuration
 
 ```js
+// .stylelintrc.js
 const { semanticOrdering } = require('../src');
 
 module.exports = {
   plugins: ['stylelint-order'],
   rules: {
     /* optional by recomented */
-    'order/order': ['custom-properties', 'dollar-variables', 'declarations', 'rules', 'at-rules'],
+    'order/order': [
+      'custom-properties',
+      'dollar-variables',
+      'declarations',
+      'at-rules', // <-- important, `@media` should go before `&:pseudo`
+      'rules',
+    ],
+    /* the actuall usage of this package */
     'order/properties-order': semanticOrdering,
   },
 };
@@ -31,14 +39,16 @@ module.exports = {
 
 Stylelint config that sorts related property declarations by grouping together following the order:
 
-- (optional) SCSS/CSS variables
-- Layout Positioning (Element bound properties, in terms of BEM)
+- (optional) SCSS/CSS variables, handled by `order/order`
+- Layout Positioning - Element bound properties (in terms of BEM) such as `grid-area`. Note: in the current implementation it is mostly about grids and grids only.
 - Positioning
 - Box Model
 - Typography
 - Visual
 - Misc
 - Animation
+- (optional) at-rules, handled by `order/order`
+- (optional) nested rules, handled by `order/order`
 
 ```scss
 .declaration-order {
@@ -52,7 +62,7 @@ Stylelint config that sorts related property declarations by grouping together f
   left: 0;
   z-index: 10;
 
-  /* Box Model */
+  /* Box Model */ /* white space between groups is ENFORCED */
   display: block;
   float: right;
   width: 100px;
@@ -83,6 +93,7 @@ Stylelint config that sorts related property declarations by grouping together f
 ## See also
 
 - this plugin is based on [stylelint-config-rational-order](https://github.com/constverum/stylelint-config-rational-order)
+- this plugin implements ideas from [idiomatic-css](https://github.com/necolas/idiomatic-css)
 
 # Licence
 
