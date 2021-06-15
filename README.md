@@ -23,7 +23,7 @@ const { semanticOrdering } = require('stylelint-semantic-groups');
 module.exports = {
   plugins: ['stylelint-order'],
   rules: {
-    /* optional by recomented */
+    /* optional by recommended */
     'order/order': [
       'custom-properties',
       'dollar-variables',
@@ -31,7 +31,7 @@ module.exports = {
       'at-rules', // <-- important, `@media` should go before `&:pseudo`
       'rules',
     ],
-    /* the actuall usage of this package */
+    /* the actual usage of this package */
     'order/properties-order': semanticOrdering,
   },
 };
