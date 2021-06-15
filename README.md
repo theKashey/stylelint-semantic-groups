@@ -18,7 +18,7 @@ yarn add stylelint-order stylelint-semantic-groups
 
 ```js
 // .stylelintrc.js
-const { semanticOrdering } = require('../src');
+const { semanticOrdering } = require('stylelint-semantic-groups');
 
 module.exports = {
   plugins: ['stylelint-order'],
