@@ -34,7 +34,7 @@ const mergeGroups = (groups: Record<string, string[] | string[][]>) => {
   return groupRules;
 };
 
-export const semanticOrdering = [
+export const propertyOrdering = [
   mergeGroups({
     scss,
     elementProperties,

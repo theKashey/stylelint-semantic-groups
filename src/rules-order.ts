@@ -2,7 +2,7 @@
  * confuigures `order/order` (stylelint order) to sort selectors in more maintainable way
  * @param [modifiersSelector] - selector for "modifier" selector, defaults to BEM one ('^&--')
  */
-export const rulesOrder = (modifiersSelector = '^&--') => [
+export const selectorOrderFactory = (modifiersSelector = '^&--') => [
   'custom-properties',
   'dollar-variables',
   'declarations',

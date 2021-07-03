@@ -16,9 +16,26 @@ yarn add stylelint-order stylelint-semantic-groups
 
 - set configuration
 
+### Recommended configuration
+
 ```js
 // .stylelintrc.js
-const { semanticOrdering } = require('stylelint-semantic-groups');
+const { propertyOrdering, selectorOrdering } = require('stylelint-semantic-groups');
+
+module.exports = {
+  plugins: ['stylelint-order'],
+  rules: {
+    'order/order': selectorOrdering, // to fine-tune configuration use selectorOrderFactory
+    'order/properties-order': propertyOrdering,
+  },
+};
+```
+
+### Minimal configuration
+
+```js
+// .stylelintrc.js
+const { propertyOrdering } = require('stylelint-semantic-groups');
 
 module.exports = {
   plugins: ['stylelint-order'],
@@ -32,7 +49,7 @@ module.exports = {
       'rules',
     ],
     /* the actual usage of this package */
-    'order/properties-order': semanticOrdering,
+    'order/properties-order': propertyOrdering,
   },
 };
 ```
