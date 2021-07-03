@@ -1,6 +1,7 @@
 /**
  * confuigures `order/order` (stylelint order) to sort selectors in more maintainable way
  * @param [modifiersSelector] - selector for "modifier" selector, defaults to BEM one ('^&--')
+ * @see https://github.com/hudochenkov/stylelint-order/issues/114
  */
 export const selectorOrderFactory = (modifiersSelector = '^&--') => [
   'custom-properties',
