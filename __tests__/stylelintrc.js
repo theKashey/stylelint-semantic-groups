@@ -1,4 +1,4 @@
-const { semanticOrdering } = require('../src');
+const { semanticOrdering } = require('../src/properties-order');
 
 module.exports = {
   plugins: ['stylelint-order'],
