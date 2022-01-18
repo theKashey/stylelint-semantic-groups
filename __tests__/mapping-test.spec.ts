@@ -29,6 +29,7 @@ describe('Smoke', () => {
     right: 0;
     bottom: 0;
     left: 0;
+    inset-inline-start: 0;
     
     --color: #FFF;
     
@@ -83,6 +84,7 @@ describe('Smoke', () => {
           grid-row-start:4;  
           /* Positioning */
           position: absolute;
+          inset-inline-start: 0;
           top: 0;
           left: 0;
           bottom: 0;

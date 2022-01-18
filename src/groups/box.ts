@@ -1,3 +1,5 @@
+import { logicalProperty } from '../utils';
+
 export default [
   [
     'display',
@@ -40,12 +42,18 @@ export default [
     'min-height',
     'max-height',
 
-    ...['margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left'],
-    'padding',
+    ...logicalProperty('margin'),
+    'margin-top',
+    'margin-right',
+    'margin-bottom',
+    'margin-left',
+
+    ...logicalProperty('padding'),
     'padding-top',
     'padding-right',
     'padding-bottom',
     'padding-left',
+
     'box-sizing',
   ],
 ];
