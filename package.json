@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "lib-builder build && yarn size:report",
-    "prepublish": "yarn build && yarn changelog",
+    "prepublish-only": "yarn build && yarn changelog",
     "test": "jest",
     "test:ci": "jest --runInBand --coverage",
     "release": "yarn build && yarn test",
