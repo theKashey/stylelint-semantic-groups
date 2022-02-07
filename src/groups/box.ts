@@ -22,6 +22,8 @@ export default [
     'grid-row-gap',
     'grid-column-gap',
     'gap',
+    'row-gap',
+    'column-gap',
     'place-content',
     'place-items',
     'place-self',
