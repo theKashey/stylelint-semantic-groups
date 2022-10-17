@@ -37,6 +37,13 @@ export default [
     'clear',
   ],
   [
+    // Add logical size for width , height
+    'inline-size',
+    'block-size',
+    'min-inline-size',
+    'max-inline-size',
+    'min-block-size',
+    'max-block-size',
     'width',
     'height',
     'min-width',
