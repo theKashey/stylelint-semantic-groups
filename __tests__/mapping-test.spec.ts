@@ -31,6 +31,7 @@ describe('Smoke', () => {
     left: 0;
     inset-inline-start: 0;
     
+    all: unset;
     --color: #FFF;
     
     grid-row-start:4;
@@ -76,10 +77,12 @@ describe('Smoke', () => {
           declaration-order {   
           --fill-1: #FFF;
           --fill-2: #FFF;
-          
           --color: #FFF;
           
           --stroke: #FFF;
+          
+          all: unset;
+
           grid-row:3;
           grid-row-start:4;  
           /* Positioning */
