@@ -1,4 +1,16 @@
-import { animations, border, box, clip, elementProperties, misc, scss, style, typography, visuals } from './groups';
+import {
+  topLevel,
+  animations,
+  border,
+  box,
+  clip,
+  elementProperties,
+  misc,
+  scss,
+  style,
+  typography,
+  visuals,
+} from './groups';
 
 type Rule = {
   groupName: string;
@@ -37,6 +49,7 @@ const mergeGroups = (groups: Record<string, string[] | string[][]>) => {
 export const propertyOrdering = [
   mergeGroups({
     scss,
+    topLevel,
     elementProperties,
 
     box,
