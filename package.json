@@ -34,8 +34,9 @@
     "changelog:rewrite": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "devDependencies": {
+    "@size-limit/preset-small-lib": "^11.2.0",
+    "size-limit": "^11.2.0",
     "@theuiteam/lib-builder": "^0.1.3",
-    "@size-limit/preset-small-lib": "^2.1.6",
     "@types/stylelint": "^13.13.0",
     "stylelint": "^13.13.1",
     "stylelint-order": "^4.1.0",
@@ -73,5 +74,6 @@
     "tabWidth": 2,
     "semi": true,
     "singleQuote": true
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

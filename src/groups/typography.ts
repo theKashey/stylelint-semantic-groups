@@ -45,7 +45,6 @@ export default [
   'columns',
   'column-count',
   'column-fill',
-  'column-gap',
   'column-rule',
   'column-rule-color',
   'column-rule-style',
